@@ -134,8 +134,10 @@
           element.classList.toggle("dark");
           if (document.getElementById("light_button").innerHTML == "Dark") {
             document.getElementById("light_button").innerHTML = "Light"
+            document.documentElement.style.setProperty('--font-color','#262338');
           } else {
             document.getElementById("light_button").innerHTML = "Dark"
+            document.documentElement.style.setProperty('--font-color','#ffffff');
           }
         }
       </script>
