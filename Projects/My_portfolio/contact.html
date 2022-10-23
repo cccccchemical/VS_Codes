@@ -14,7 +14,7 @@
     <nav>
       <h2 id="logo">Haven's space</h2>
       <ul class="navigation-items">
-        <li class="navigation-item" href="./index.html#about-me">About Me</li>
+        <li class="navigation-item" href="./index.html#about-me"><a>About Me</a></li>
         <li class="navigation-item"><a href="./index.html#projects">Projects</a></li>
         <li class="navigation-item"><a href="./index.html#skills">Skills</a></li>
         <li class="navigation-item"><a href="#">Contact</a></li>
@@ -62,8 +62,10 @@
           element.classList.toggle("dark");
           if (document.getElementById("light_button").innerHTML == "Dark") {
             document.getElementById("light_button").innerHTML = "Light"
+            document.documentElement.style.setProperty('--font-color','#262338');
           } else {
             document.getElementById("light_button").innerHTML = "Dark"
+            document.documentElement.style.setProperty('--font-color','#ffffff');
           }
         }
     </script>
